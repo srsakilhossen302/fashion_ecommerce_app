@@ -1,8 +1,11 @@
 import 'package:e_commerce_fashion_app/Utils/AppIcons/app_icons.dart';
 import 'package:e_commerce_fashion_app/Utils/AppImg/app_img.dart';
+import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../Widgegt/Custom_Container.dart';
 
@@ -15,6 +18,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
+  int? bselectedIndex;
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -704,35 +710,48 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 0;
+                    });
+                  },
                   child: Text(
                     "About",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
-                      color: Color(0xff000000),
+                      color: bselectedIndex == 0 ? Colors.grey : Colors.black,
                     ),
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 1;
+                    });
+                  },
                   child: Text(
                     "Contact",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
-                      color: Color(0xff000000),
+                      color: bselectedIndex == 1 ? Colors.grey : Colors.black,
                     ),
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 2;
+                    });
+                    Get.toNamed(AppRoute.blogGridView);
+                  },
                   child: Text(
                     "Blog",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
-                      color: Color(0xff000000),
+                      color: bselectedIndex == 2 ? Colors.grey : Colors.black,
                     ),
                   ),
                 ),

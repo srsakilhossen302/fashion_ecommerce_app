@@ -21,5 +21,10 @@ class AppImages{
   static const String Group258 = "$basePath/Group 258.png";
   static const String Group259 = "$basePath/Group 259.png";
   static const String Group260 = "$basePath/Group 260.png";
+  static const String rectangle1 = "$basePath/Rectangle 434.png";
+  static const String rectangle2 = "$basePath/Rectangle 434 (1).png";
+  static const String rectangle3 = "$basePath/Rectangle 434 (2).png";
+  static const String rectangle4 = "$basePath/Rectangle 434 (3).png";
+  static const String image14 = "$basePath/image 14.png";
 
 }

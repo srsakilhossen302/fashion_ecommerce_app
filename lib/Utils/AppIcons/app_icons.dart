@@ -43,6 +43,7 @@ class AppIcons{
     static const String InstagramLogo = "$basePath/Vector.svg";
     static const String YouTubeLogo = "$basePath/Vector (1).svg";
     static const String TwitterLogo = "$basePath/Vectort.svg";
+    static const String BookmarkLogo = "$basePath/Bookmark.svg";
 
 
 }
