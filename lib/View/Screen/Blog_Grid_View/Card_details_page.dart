@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../Utils/AppIcons/app_icons.dart';
 
-class DetailPage extends StatelessWidget {
+class DetailPage extends StatefulWidget {
   final String image;
   final String title;
   final String description;
@@ -20,7 +20,16 @@ class DetailPage extends StatelessWidget {
   });
 
   @override
+  State<DetailPage> createState() => _DetailPageState();
+}
+
+class _DetailPageState extends State<DetailPage> {
+  int bselectedIndex = 2;
+
+  @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       backgroundColor: Color(0xffFFFFFF),
       appBar: AppBar(
@@ -55,7 +64,7 @@ class DetailPage extends StatelessWidget {
               SizedBox(height: 32.h),
               ClipRRect(
                 child: Image.asset(
-                  image,
+                  widget.image,
                   width: double.infinity,
                   height: 221.h,
                   fit: BoxFit.cover,
@@ -67,7 +76,7 @@ class DetailPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      title,
+                      widget.title,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Color(0xff000000),
@@ -77,7 +86,7 @@ class DetailPage extends StatelessWidget {
                     ),
                     SizedBox(height: 16.h),
                     Text(
-                      description,
+                      widget.description,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Color(0xff000000),
@@ -176,7 +185,7 @@ class DetailPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height:  32.h),
+              SizedBox(height:  26.h),
               Padding(
                 padding:  EdgeInsets.only(right: 16.w, left: 16.w,),
                 child: Row(
@@ -202,7 +211,186 @@ class DetailPage extends StatelessWidget {
                     ),
                   ],
                 ),
-              )
+              ),
+
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 10.w,
+                        vertical: 5.h,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Color(0xffFFFFFF),
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: Color(0xff888888), width: 1),
+                      ),
+                      child: Text(
+                        "#Fashion",
+                        style: TextStyle(
+                          fontFamily: "Open Sans",
+                          fontSize: 12.sp,
+                          color: Color(0xff000000),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 8.w),
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 10.w,
+                        vertical: 5.h,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Color(0xffFFFFFF),
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: Color(0xff888888), width: 1),
+                      ),
+                      child: Text(
+                        "#Tips",
+                        style: TextStyle(
+                          fontFamily: "Open Sans",
+                          fontSize: 12.sp,
+                          color: Color(0xff000000),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              SizedBox(height: 55.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SvgPicture.asset(
+                    AppIcons.InstagramLogo,
+                    width: 22.w,
+                    height: 22.h,
+                    color: Color(0xff000000),
+                  ),
+                  SvgPicture.asset(
+                    AppIcons.YouTubeLogo,
+                    width: 22.w,
+                    height: 22.h,
+                  ),
+                  SvgPicture.asset(
+                    AppIcons.TwitterLogo,
+                    width: 22.w,
+                    height: 22.h,
+                  ),
+                ],
+              ),
+              SizedBox(height: 24.h),
+              Center(
+                child: Image.asset(AppImages.Devider, width: 130.w, height: 10.h),
+              ),
+              SizedBox(height: 20.h),
+              Center(
+                child: Column(
+                  children: [
+                    Text(
+                      "support@Sakil.design",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: Color(0xff000000),
+                      ),
+                    ),
+                    SizedBox(height: 5.h),
+                    Text(
+                      "+8801774452302",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: Color(0xff000000),
+                      ),
+                    ),
+                    SizedBox(height: 5.h),
+                    Text(
+                      "08:00 - 22:00 - Everyday",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: Color(0xff000000),
+                      ),
+                    ),
+                    SizedBox(height: 30.h),
+                    Image.asset(AppImages.Devider),
+                  ],
+                ),
+              ),
+              SizedBox(height: 33.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        bselectedIndex = 0;
+                      });
+                    },
+                    child: Text(
+                      "About",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: bselectedIndex == 0 ? Colors.grey : Colors.black,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        bselectedIndex = 1;
+                      });
+                    },
+                    child: Text(
+                      "Contact",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: bselectedIndex == 1 ? Colors.grey : Colors.black,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        bselectedIndex = 2;
+                      });
+                      //Get.toNamed(AppRoute.blogGridView);
+                    },
+                    child: Text(
+                      "Blog",
+                      style: TextStyle(
+                        fontFamily: "Open Sans",
+                        fontSize: 16.sp,
+                        color: bselectedIndex == 2 ? Colors.grey : Colors.black,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 24.h),
+              Container(
+                width: 375.w,
+                height: 45.h,
+                decoration: BoxDecoration(color: Color(0xffC4C4C4)),
+                child: Center(
+                  child: Text(
+                    "Copyright © 2025 Sakil. All Rights Reserved.",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 14.sp,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                ),
+              ),
+
+
             ],
           ),
         ),

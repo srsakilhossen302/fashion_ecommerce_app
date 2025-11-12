@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                             "Explore Collection",
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
-                              fontSize: 17.sp,
+                              fontSize: 17,
                               fontFamily: 'Playfair',
                               color: Color(0xffFFFFFF),
                             ),

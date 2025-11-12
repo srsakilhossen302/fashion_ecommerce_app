@@ -74,7 +74,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               height: 134.h,
               child: Row(
                 children: [
-                  // Left Side Image
+                  /// Left Side Image
                   ClipRRect(
                     child: Image.asset(
                       widget.image,
@@ -83,8 +83,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       fit: BoxFit.cover,
                     ),
                   ),
-        
-                  // Right Side Details
+
+                  /// Right Side Details
                   Expanded(
                     child: Padding(
                       padding:

@@ -19,7 +19,6 @@ class CustomProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Tap -> Navigate to Detail page with this container's data
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -35,8 +34,6 @@ class CustomProductCard extends StatelessWidget {
       child: Container(
         width: 160.w,
         height: 277.h,
-
-
         margin: EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
