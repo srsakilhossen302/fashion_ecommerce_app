@@ -1,3 +1,4 @@
+import 'package:e_commerce_fashion_app/View/Widgegt/blog_grid_Fashion_Custom_Container.dart';
 import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -7,18 +8,18 @@ import 'package:get/get_core/src/get_main.dart';
 
 import '../../../Utils/AppIcons/app_icons.dart';
 import '../../../Utils/AppImg/app_img.dart';
-import '../../Widgegt/Blog_grid_view_Custom_Card.dart';
 
-class BlogGridView extends StatefulWidget {
-  const BlogGridView({super.key});
+class Promo extends StatefulWidget {
+  const Promo({super.key});
 
   @override
-  State<BlogGridView> createState() => _BlogGridViewState();
+  State<Promo> createState() => _PromoState();
 }
 
-class _BlogGridViewState extends State<BlogGridView> {
-  int bselectedIndex = 2;
-  int TselectedIndex = 0;
+class _PromoState extends State<Promo> {
+  int TselectedIndex = 2;
+
+  int? bselectedIndex;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +73,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                 children: [
                   TextButton(
                     onPressed: () {
+                      Get.toNamed(AppRoute.blogGridView);
                       setState(() {
                         TselectedIndex = 0;
                       });
@@ -81,15 +83,17 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 0 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 0
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
                   SizedBox(width: 10),
                   TextButton(
                     onPressed: () {
-                      Get.toNamed(AppRoute.blogGridFashion);
                       setState(() {
+                        Get.toNamed(AppRoute.blogGridFashion);
                         TselectedIndex = 1;
                       });
                     },
@@ -98,14 +102,15 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 1 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 1
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
                   SizedBox(width: 10),
                   TextButton(
                     onPressed: () {
-                      Get.toNamed(AppRoute.PromoPage);
                       setState(() {
                         TselectedIndex = 2;
                       });
@@ -115,7 +120,9 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 2 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 2
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
@@ -132,7 +139,9 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 3 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 3
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
@@ -148,7 +157,9 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 4 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 4
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
@@ -164,7 +175,9 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 5 ?  Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 5
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
@@ -180,84 +193,138 @@ class _BlogGridViewState extends State<BlogGridView> {
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
-                        color: TselectedIndex == 6 ? Color(0xffDD8560) : Color(0xff333333),
+                        color: TselectedIndex == 6
+                            ? Color(0xffDD8560)
+                            : Color(0xff333333),
                       ),
                     ),
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 10.h),
-            FashionCard(
-              image: AppImages.rectangle1,
-              title: "2021 Style Guide: The Biggest Fall Trends",
-              description:
-              "You guys know how much I love mixing high and low-end – "
-                  "it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. "
-                  "The same goes for handbags! And honestly "
-                  "they are probably the best pieces to mix and "
-                  "match. I truly think the key to completing a look"
-                  " is with a great bag and I found so many this year that "
-                  "I wanted to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
-            ),
-            FashionCard(
-              image: AppImages.rectangle2,
-              title: "2021 Style Guide: The Biggest Fall Trends",
-              description:
-              "You guys know how much I love mixing high and low-end "
-                  "– it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. The same"
-                  " goes for handbags! And honestly they are probably "
-                  "the best pieces to mix and match. I truly think the "
-                  "key to completing a look is with a great bag and I "
-                  "found so many this year that I wanted to share a round-"
-                  "up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
-            ),
-            FashionCard(
-              image: AppImages.rectangle3,
-              title: "2021 Style Guide: The Biggest Fall Trends",
-              description:
-              "You guys know how much I love mixing high and low-end – "
-                  "it’s the best way to get the most bang for your buck "
-                  "while still elevating your wardrobe. The same goes for"
-                  " handbags! And honestly they are probably the best pieces "
-                  "to mix and match. I truly think the key to completing a look "
-                  "is with a great bag and I found so many this year that I wanted"
-                  " to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
-            ),
-            FashionCard(
-              image: AppImages.rectangle4,
-              title: "2021 Style Guide: The Biggest Fall Trends",
-              description:
-              "You guys know how much I love mixing high and low-end "
-                  "– it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. The same "
-                  "goes for handbags! And honestly they are probably the "
-                  "best pieces to mix and match. I truly think the key to"
-                  " completing a look is with a great bag and I found so many "
-                  "this year that I wanted to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
-            ),
+            SizedBox(height: 28.h),
+
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle8,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "11/10/2025"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle7,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "11 days ago"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle6,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "12/11/25"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle10,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "4 days ago"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle9,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "6 days ago"),
+
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle4,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "1 days ago"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle1,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "15/10/2005"),
+            SizedBox(height: 24.h),
+            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
+                "The Biggest Fall Trends",
+                image: AppImages.rectangle5,
+                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+                    "  You guys know how much I love mixing high and "
+                    "low-end – it’s the best way to get the most bang for"
+                    " your buck while still elevating your wardrobe."
+                    " The same goes for handbags! And honestly they "
+                    "are probably the best pieces to mix and match. "
+                    "I truly think the key to completing a look is with "
+                    "a great bag and I found so many this year that I wanted "
+                    "to share a round-up of my most worn handbags.",
+                date: "2 days ago"),
+
             SizedBox(height: 28.h),
             Container(
               width: 211.w,
               height: 48.h,
               decoration: BoxDecoration(
-                border: Border.all(
-                  color: Color(0xffDEDEDE)
-                )
+                  border: Border.all(
+                      color: Color(0xffDEDEDE)
+                  )
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,

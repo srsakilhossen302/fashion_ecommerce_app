@@ -31,5 +31,6 @@ class AppImages{
   static const String rectangle7 = "$basePath/Rectangle 433 (3).png";
   static const String rectangle8 = "$basePath/Rectangle 433 (4).png";
   static const String rectangle9 = "$basePath/Rectangle 433 (5).png";
+  static const String rectangle10 = "$basePath/Rectangle 433.png";
 
 }
