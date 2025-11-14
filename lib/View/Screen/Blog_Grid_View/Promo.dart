@@ -19,7 +19,7 @@ class Promo extends StatefulWidget {
 class _PromoState extends State<Promo> {
   int TselectedIndex = 2;
 
-  int? bselectedIndex;
+  int bselectedIndex =  2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

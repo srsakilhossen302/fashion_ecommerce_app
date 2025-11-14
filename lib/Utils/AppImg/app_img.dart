@@ -32,5 +32,23 @@ class AppImages{
   static const String rectangle8 = "$basePath/Rectangle 433 (4).png";
   static const String rectangle9 = "$basePath/Rectangle 433 (5).png";
   static const String rectangle10 = "$basePath/Rectangle 433.png";
+  static const String Rectangle344_0 = "$basePath/Rectangle 344.png";
+  static const String Rectangle344_1 = "$basePath/Rectangle 344 (1).png";
+  static const String Rectangle344_2 = "$basePath/Rectangle 344 (2).png";
+  static const String Rectangle344_3 = "$basePath/Rectangle 344 (3).png";
+  static const String Rectangle344_4 = "$basePath/Rectangle 344 (4).png";
+  static const String Rectangle344_5 = "$basePath/Rectangle 344 (5).png";
+  static const String Rectangle344_6 = "$basePath/Rectangle 344 (6).png";
+  static const String Rectangle344_7 = "$basePath/Rectangle 344 (7).png";
+  static const String Rectangle344_8 = "$basePath/Rectangle 344 (8).png";
+  static const String Rectangle344_9 = "$basePath/Rectangle 344 (9).png";
+  static const String Dress1 = "$basePath/Dress1.png";
+  static const String Dress2 = "$basePath/Dress2.png";
+  static const String Dress3 = "$basePath/Dress3.png";
+  static const String Dress4 = "$basePath/Dress4.png";
+  static const String Dress5 = "$basePath/Dress5.png";
+  static const String Dress6 = "$basePath/Dress6.png";
+  static const String Dress7 = "$basePath/Dress7.png";
+  static const String Dress8 = "$basePath/Dress8.png";
 
 }

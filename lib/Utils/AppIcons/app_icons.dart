@@ -44,6 +44,10 @@ class AppIcons{
     static const String YouTubeLogo = "$basePath/Vector (1).svg";
     static const String TwitterLogo = "$basePath/Vectort.svg";
     static const String BookmarkLogo = "$basePath/Bookmark.svg";
+    static const String Forwarddw = "$basePath/Forwarddw.svg";
+    static const String Forwardup = "$basePath/Forwardup.svg";
+    static const String Polygon = "$basePath/Polygon 1.svg";
+    static const String next = "$basePath/Next.svg";
 
 
 }

@@ -18,6 +18,7 @@ class BlogGridFashion extends StatefulWidget {
 
 class _BlogGridFashionState extends State<BlogGridFashion> {
   int TselectedIndex = 1;
+  int bselectedIndex =  2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -312,7 +313,169 @@ class _BlogGridFashionState extends State<BlogGridFashion> {
                     "a great bag and I found so many this year that I wanted "
                     "to share a round-up of my most worn handbags.",
                 date: "15/10/2005"),
+
+            SizedBox(height: 28.h),
+            Container(
+              width: 211.w,
+              height: 48.h,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                      color: Color(0xffDEDEDE)
+                  )
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Load more",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Playfair",
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 8.w),
+                  SvgPicture.asset(AppIcons.PlusIcon)
+                ],
+              ),
+            ),
+
+            SizedBox(height: 55.h),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SvgPicture.asset(
+                  AppIcons.InstagramLogo,
+                  width: 22.w,
+                  height: 22.h,
+                  color: Color(0xff000000),
+                ),
+                SvgPicture.asset(
+                  AppIcons.YouTubeLogo,
+                  width: 22.w,
+                  height: 22.h,
+                ),
+                SvgPicture.asset(
+                  AppIcons.TwitterLogo,
+                  width: 22.w,
+                  height: 22.h,
+                ),
+              ],
+            ),
             SizedBox(height: 24.h),
+            Center(
+              child: Image.asset(AppImages.Devider, width: 130.w, height: 10.h),
+            ),
+            SizedBox(height: 20.h),
+            Center(
+              child: Column(
+                children: [
+                  Text(
+                    "support@Sakil.design",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(height: 5.h),
+                  Text(
+                    "+8801774452302",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(height: 5.h),
+                  Text(
+                    "08:00 - 22:00 - Everyday",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(height: 30.h),
+                  Image.asset(AppImages.Devider),
+                ],
+              ),
+            ),
+            SizedBox(height: 33.h),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 0;
+                    });
+                  },
+                  child: Text(
+                    "About",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: bselectedIndex == 0 ? Colors.grey : Colors.black,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 1;
+                    });
+                  },
+                  child: Text(
+                    "Contact",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: bselectedIndex == 1 ? Colors.grey : Colors.black,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      bselectedIndex = 2;
+                    });
+                    //Get.toNamed(AppRoute.blogGridView);
+                  },
+                  child: Text(
+                    "Blog",
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      color: bselectedIndex == 2 ? Colors.grey : Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 24.h),
+            Container(
+              width: 375.w,
+              height: 45.h,
+              decoration: BoxDecoration(color: Color(0xffC4C4C4)),
+              child: Center(
+                child: Text(
+                  "Copyright © 2025 Sakil. All Rights Reserved.",
+                  style: TextStyle(
+                    fontFamily: "Open Sans",
+                    fontSize: 14.sp,
+                    color: Color(0xff000000),
+                  ),
+                ),
+              ),
+            ),
+
+
+
+
+
+
+
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:e_commerce_fashion_app/Utils/AppIcons/app_icons.dart';
 import 'package:e_commerce_fashion_app/Utils/AppImg/app_img.dart';
+import 'package:e_commerce_fashion_app/View/Widgegt/Custom_Drawer/Custom_Drawer_Menu.dart';
 import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,6 +18,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  //final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   int selectedIndex = 0;
   int? bselectedIndex;
 
@@ -25,11 +27,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //key: scaffoldKey,
+      //drawer: CustomDrawerMenu(),
       backgroundColor: Color(0xffFFFFFF),
       appBar: AppBar(
         backgroundColor: Color(0xffE7EAEF),
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.toNamed(AppRoute.customDrawer);
+            // scaffoldKey.currentState?.openDrawer();
+          },
           icon: SvgPicture.asset(AppIcons.MenuIcon),
         ),
         title: SvgPicture.asset(AppIcons.Applogo, height: 32.h, width: 78.w),
@@ -71,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                       "LUXURY",
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
-                        fontSize: 24.h,
+                        fontSize: 24.sp,
                         fontFamily: 'Playfair',
                         color: Color(0xffFFFFFF),
                       ),
@@ -156,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 0 ? Colors.black : Colors.grey,
+                      color: selectedIndex == 0 ? Color(0xff000000) : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -172,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 1 ? Colors.black : Colors.grey,
+                      color: selectedIndex == 1 ? Color(0xff000000) : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -188,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 2 ? Colors.black : Colors.grey,
+                      color: selectedIndex == 2 ?  Color(0xff000000) : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -204,7 +211,7 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 3 ? Colors.black : Colors.grey,
+                      color: selectedIndex == 3 ?  Color(0xff000000) : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -220,71 +227,16 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 4 ? Colors.black : Colors.grey,
+                      color: selectedIndex == 4 ? Color(0xff000000) : Color(0xff888888),
                     ),
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 20.h),
-            SingleChildScrollView(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Column(
-                    children: [
-                      CustomProductCard(
-                        title: "21WN reversible angora cardigan",
-                        image: AppImages.Rectangle1,
-                        price: 120.0,
-                        description: "reversible angora cardigan",
-                      ),
-                      CustomProductCard(
-                        title: "21WN reversible angora cardigan",
-                        image: AppImages.Rectangle2,
-                        price: 120.0,
-                        description: "reversible angora cardigan",
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CustomProductCard(
-                        title: "21WN reversible angora cardigan",
-                        image: AppImages.Rectangle3,
-                        price: 120.0,
-                        description: "reversible angora cardigan",
-                      ),
-                      CustomProductCard(
-                        title: "21WN reversible angora cardigan",
-                        image: AppImages.Rectangle4,
-                        price: 120.0,
-                        description: "reversible angora cardigan",
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 30.h),
-            Container(
-              height: 24.h,
-              width: 110.w,
-              child: Row(
-                children: [
-                  Text(
-                    "Explore More",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xff000000),
-                    ),
-                  ),
-                  SizedBox(width: 4.w),
-                  Icon(Icons.arrow_forward),
-                ],
-              ),
-            ),
+
+            _buildContent(),
+
+
             SizedBox(height: 50.h),
             Image.asset(
               AppImages.Devider,
@@ -778,4 +730,366 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+  /// ================== Change Content by Index ==================
+  Widget _buildContent() {
+    switch (selectedIndex) {
+      case 0:
+        return _allContent();
+      case 1:
+        return _apparelContent();
+      case 2:
+        return _dressContent();
+      case 3:
+        return _tshirtContent();
+      default:
+        return _bagContent();
+    }
+  }
+
+  Widget _allContent(){
+    return  SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle1,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle2,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle3,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle4,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30.h),
+          GestureDetector(
+            onTap: (){
+              Get.toNamed(AppRoute.allExploreMore);
+            },
+            child: Container(
+              height: 24.h,
+              width: 110.w,
+              child: Row(
+                children: [
+                  Text(
+                    "Explore More",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 4.w),
+                  Icon(Icons.arrow_forward),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+  Widget _apparelContent(){
+    return  SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle344_0,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle344_1,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle344_2,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle344_3,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30.h),
+          GestureDetector(
+            onTap: (){
+              Get.toNamed(AppRoute.apparelExplore);
+            },
+            child: Container(
+              height: 24.h,
+              width: 110.w,
+              child: Row(
+                children: [
+                  Text(
+                    "Explore More",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 4.w),
+                  Icon(Icons.arrow_forward),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+  Widget _dressContent(){
+    return  SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Dress5,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Dress8,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Dress4,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Dress7,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30.h),
+          GestureDetector(
+            onTap: (){
+              Get.toNamed(AppRoute.dressExploreMore);
+            },
+            child: Container(
+              height: 24.h,
+              width: 110.w,
+              child: Row(
+                children: [
+                  Text(
+                    "Explore More",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 4.w),
+                  Icon(Icons.arrow_forward),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+  Widget _tshirtContent(){
+    return  SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle1,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle2,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle3,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle4,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30.h),
+          GestureDetector(
+            onTap: (){
+              Get.toNamed(AppRoute.tShirtExploreMore);
+            },
+            child: Container(
+              height: 24.h,
+              width: 110.w,
+              child: Row(
+                children: [
+                  Text(
+                    "Explore More",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 4.w),
+                  Icon(Icons.arrow_forward),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+  Widget _bagContent(){
+    return  SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.rectangle2,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle2,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.rectangle5,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                  CustomProductCard(
+                    title: "21WN reversible angora cardigan",
+                    image: AppImages.Rectangle4,
+                    price: 120.0,
+                    description: "reversible angora cardigan",
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 30.h),
+          GestureDetector(
+            onTap: (){
+              Get.toNamed(AppRoute.bagExploreMore);
+            },
+            child: Container(
+              height: 24.h,
+              width: 110.w,
+              child: Row(
+                children: [
+                  Text(
+                    "Explore More",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff000000),
+                    ),
+                  ),
+                  SizedBox(width: 4.w),
+                  Icon(Icons.arrow_forward),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
 }
