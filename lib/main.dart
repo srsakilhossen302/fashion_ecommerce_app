@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
-import 'View/Screen/Home_Screen/home_page_Controller.dart';
-import 'View/Screen/splashScreen/splash_screen_controller.dart';
 import 'core/App_Routes/app_routes.dart';
+import 'core/dependency_injection/dependency_injection.dart';
 
-void main() {
-  ///Dependency Injection
-  Get.put(SplashScreenController());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(const MyApp());
+  DependencyInjection.init();   // <<< VERY IMPORTANT
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
