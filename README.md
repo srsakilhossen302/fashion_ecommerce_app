@@ -1,3 +1,5 @@
+///sry kisu kisu commit amar anno id diya hoye gece ,, but setao amar id oi ta te web ar kaj kori ami ,,,
+
 # e_commerce_fashion_app
 
 Open Fashion: Flutter/Dart Technical Case Study
