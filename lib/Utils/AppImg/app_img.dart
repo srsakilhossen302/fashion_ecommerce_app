@@ -50,5 +50,8 @@ class AppImages{
   static const String Dress6 = "$basePath/Dress6.png";
   static const String Dress7 = "$basePath/Dress7.png";
   static const String Dress8 = "$basePath/Dress8.png";
+  static const String appleLogo = "$basePath/apple.png";
+  static const String fdLogo = "$basePath/fd.png";
+  static const String googleLogo = "$basePath/google.png";
 
 }
