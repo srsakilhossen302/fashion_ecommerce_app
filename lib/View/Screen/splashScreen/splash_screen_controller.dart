@@ -13,7 +13,7 @@ class SplashScreenController extends GetxController {
   void startSplash()  {
     Timer(const Duration(seconds: 4), ()  {
 
-      Get.offAllNamed(AppRoute.homeScreen);
+      Get.offAllNamed(AppRoute.signInScreen);
 
       // String token = await SharePrefsHelper.getString(AppConstants.bearerToken);
       //
