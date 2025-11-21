@@ -50,4 +50,5 @@ class AppIcons{
     static const String next = "$basePath/Next.svg";
 
 
+
 }
