@@ -9,6 +9,7 @@ import '../../View/Screen/Blog_Grid_View/blog_grid_view.dart';
 import '../../View/Screen/Dress_Explore_More/dress_Explore_More.dart';
 import '../../View/Screen/Home_Screen/home_page.dart';
 import '../../View/Screen/Sign_In/sign_in_view.dart';
+import '../../View/Screen/Sign_Up/sign_up_view.dart';
 import '../../View/Screen/T_Shirt_Explore_More/t_shirt_Explore_More.dart';
 import '../../View/Screen/splashScreen/splash_screen_view.dart';
 import '../../View/Widgegt/Custom_Drawer/Custom_Drawer.dart';
@@ -36,6 +37,7 @@ class AppRoute {
   static const String bagExploreMore = "/bagExploreMore";
   static const String splashScreen = "/splashScreen";
   static const String signInScreen = "/signInScreen";
+  static const String signUpScreen = "/signUpScreen";
 
   static List<GetPage> routes = [
     ///==================== Authentication  Routes ====================///
@@ -55,6 +57,7 @@ class AppRoute {
     GetPage(name: bagExploreMore, page: () => const BagExploreMore()),
     GetPage(name: splashScreen, page: () =>  SplashScreenView()),
     GetPage(name: signInScreen, page: () =>  SignInView()),
+    GetPage(name: signUpScreen, page: () =>  SignUpView()),
    // GetPage(name: productDetailPage, page: () => const ProductDetailPage(title: "", image: "",)),
 
 

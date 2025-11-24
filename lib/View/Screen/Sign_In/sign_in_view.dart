@@ -1,12 +1,11 @@
-import 'package:e_commerce_fashion_app/Utils/AppIcons/app_icons.dart';
 import 'package:e_commerce_fashion_app/Utils/AppImg/app_img.dart';
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:e_commerce_fashion_app/View/Screen/Sign_In/sign_in_controller.dart';
 import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../Widgegt/CustomButton/CustomButton.dart';
-
 
 class SignInView extends GetView<SignInController> {
   const SignInView({super.key});
@@ -27,9 +26,10 @@ class SignInView extends GetView<SignInController> {
               Padding(
                 padding: EdgeInsets.only(right: 80.w),
                 child: Text(
-                  "Welcome Back!",
+                  AppString.welcome,
                   maxLines: 2,
                   style: TextStyle(
+                    fontFamily: 'Playfair',
                     fontSize: 36.sp,
                     fontWeight: FontWeight.w700,
                     color: const Color(0xff000000),
@@ -50,14 +50,15 @@ class SignInView extends GetView<SignInController> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: const Color(0xffF3F3F3),
-                      labelText: "Username or Email",
+                      labelText: AppString.UsernameOrEmail,
                       labelStyle: TextStyle(
+                        fontFamily: "Open Sans",
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                         color: const Color(0xff676767),
                       ),
                       contentPadding: EdgeInsets.symmetric(
-                        vertical: 20.h,
+                        vertical: 15.h,
                         horizontal: 15.w,
                       ),
                       border: OutlineInputBorder(
@@ -75,20 +76,21 @@ class SignInView extends GetView<SignInController> {
 
                   /// Password Field
                   Obx(
-                        () => TextField(
+                    () => TextField(
                       controller: controller.passwordController,
                       obscureText: controller.isObscure.value,
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: const Color(0xffF3F3F3),
-                        labelText: "Password",
+                        labelText: AppString.password,
                         labelStyle: TextStyle(
+                          fontFamily: "Open Sans",
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff676767),
                         ),
                         contentPadding: EdgeInsets.symmetric(
-                          vertical: 20.h,
+                          vertical: 15.h,
                           horizontal: 15.w,
                         ),
                         border: OutlineInputBorder(
@@ -123,8 +125,9 @@ class SignInView extends GetView<SignInController> {
                     //Get.toNamed(Routes.FORGOT);
                   },
                   child: Text(
-                    "Forgot password?",
+                    AppString.forgotPassword,
                     style: TextStyle(
+                      fontFamily: "Open Sans",
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xffF83758),
@@ -143,13 +146,14 @@ class SignInView extends GetView<SignInController> {
                     borderRadius: BorderRadius.circular(4.r),
                   ),
                 ),
-                text: "Login",
+                text: AppString.loginB,
                 onPressed: () {
                   Get.offAllNamed(AppRoute.homeScreen);
                 },
-                height: 55.h,
+                height: 50.h,
                 width: 350.w,
                 textStyle: TextStyle(
+                  fontFamily: "Open Sans",
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   color: const Color(0xffFFFFFF),
@@ -163,12 +167,13 @@ class SignInView extends GetView<SignInController> {
                 alignment: Alignment.bottomCenter,
                 child: SizedBox(
                   width: 194.w,
-                  height: 250.h,
+                  height: 200.h,
                   child: Column(
                     children: [
                       Text(
-                        "- OR Continue with -",
+                        AppString.continueWith,
                         style: TextStyle(
+                          fontFamily: "Open Sans",
                           fontWeight: FontWeight.w500,
                           fontSize: 12.sp,
                           color: const Color(0xff575757),
@@ -207,8 +212,9 @@ class SignInView extends GetView<SignInController> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Create An Account",
+                            AppString.createAnAccount,
                             style: TextStyle(
+                              fontFamily: "Open Sans",
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w400,
                               color: const Color(0xff575757),
@@ -217,11 +223,12 @@ class SignInView extends GetView<SignInController> {
                           SizedBox(width: 6.w),
                           GestureDetector(
                             onTap: () {
-                              //Get.toNamed(Routes.SIGN_UP);
+                              Get.toNamed(AppRoute.signUpScreen);
                             },
                             child: Text(
-                              "Sign Up",
+                              AppString.signUp,
                               style: TextStyle(
+                                fontFamily: "Open Sans",
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w600,
                                 color: const Color(0xffF83758),
