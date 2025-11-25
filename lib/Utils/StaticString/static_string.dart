@@ -28,5 +28,42 @@ class AppString{
   static const String tShirtTitle  = "21WN reversible angora cardigan" ;
   static const String tShirtDescription  = "reversible angora cardigan" ;
 
+///==============>>>>>>>>>> Home Page <<<<<<<<<<<===============///
 
+  static const String luxury  = "LUXURY" ;
+  static const String fashion  = "FASHION" ;
+  static const String  accessories  = "& ACCESSORIES" ;
+  static const String  exploreCollection  = "Explore Collection" ;
+  static const String  newArrival  = "New Arrival" ;
+  static const String  all  = "All" ;
+  static const String  apparel  = "Apparel" ;
+  static const String  dress  = "Dress" ;
+  static const String  tShirt  = "T-shirt" ;
+  static const String  bag  = "Bag" ;
+  static const String  collections  = "Collections" ;
+  static const String  autumn  = "Autumn" ;
+  static const String  collection  = "COLLECTION" ;
+  static const String  justForYou  = "Just for You" ;
+  static const String  hTitle  = "21WN reversible angora cardigan" ;
+  static const String  hDescription  = "reversible angora cardigan" ;
+  static const String  trending  = "@Trending" ;
+  static const String  sal  = "#2021" ;
+  static const String  spring  = "#spring" ;
+  static const String  sCollection  = "#collection" ;
+  static const String  fall  = "#fall" ;
+  static const String  sDress  = "#dress" ;
+  static const String  autumnCollection  = "#autumncollection" ;
+  static const String  openFashion  = "#openfashion" ;
+  static const String  dailyDrive  = "daily drive." ;
+  static const String  making  =  "Making a luxurious lifestyle accessible "
+      "for a generous group of women is our " ;
+  static const String  followUs  = "Follow Us" ;
+  static const String  supportSakil  = "support@Sakil.design" ;
+  static const String  phnNumbar  = "+8801774452302" ;
+  static const String  time  = "08:00 - 22:00 - Everyday";
+  static const String  about  =  "About";
+  static const String  contact  =  "Contact";
+  static const String  blog  =  "Blog";
+  static const String  exploreMore  =  "Explore More";
+  static const String  copyright  =  "Copyright © 2025 Sakil. All Rights Reserved.";
 }

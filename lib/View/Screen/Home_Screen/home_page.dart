@@ -1,5 +1,6 @@
 import 'package:e_commerce_fashion_app/Utils/AppIcons/app_icons.dart';
 import 'package:e_commerce_fashion_app/Utils/AppImg/app_img.dart';
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,8 +20,6 @@ class _HomePageState extends State<HomePage> {
   //final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   int selectedIndex = 0;
   int? bselectedIndex;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "LUXURY",
+                      AppString.luxury,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.sp,
@@ -82,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      "FASHION",
+                      AppString.fashion,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.h,
@@ -91,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      "& ACCESSORIES",
+                      AppString.accessories,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.h,
@@ -111,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         child: Center(
                           child: Text(
-                            "Explore Collection",
+                            AppString.exploreCollection,
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 17,
@@ -129,7 +128,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 24.h),
             Center(
               child: Text(
-                "New Arrival",
+                AppString.newArrival,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 24.sp,
@@ -156,12 +155,14 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "All",
+                    AppString.all,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 0 ? Color(0xff000000) : Color(0xff888888),
+                      color: selectedIndex == 0
+                          ? Color(0xff000000)
+                          : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -172,12 +173,14 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "Apparel",
+                    AppString.apparel,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 1 ? Color(0xff000000) : Color(0xff888888),
+                      color: selectedIndex == 1
+                          ? Color(0xff000000)
+                          : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -188,12 +191,14 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "Dress",
+                    AppString.dress,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 2 ?  Color(0xff000000) : Color(0xff888888),
+                      color: selectedIndex == 2
+                          ? Color(0xff000000)
+                          : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -204,12 +209,14 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "T-shirt",
+                    AppString.tShirt,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 3 ?  Color(0xff000000) : Color(0xff888888),
+                      color: selectedIndex == 3
+                          ? Color(0xff000000)
+                          : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -220,12 +227,14 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "Bag",
+                    AppString.bag,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
                       fontFamily: 'Playfair',
-                      color: selectedIndex == 4 ? Color(0xff000000) : Color(0xff888888),
+                      color: selectedIndex == 4
+                          ? Color(0xff000000)
+                          : Color(0xff888888),
                     ),
                   ),
                 ),
@@ -233,7 +242,6 @@ class _HomePageState extends State<HomePage> {
             ),
 
             _buildContent(),
-
 
             SizedBox(height: 50.h),
             Image.asset(
@@ -282,7 +290,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 60.h),
             Center(
               child: Text(
-                "Collections",
+                AppString.collections,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 20.sp,
@@ -317,7 +325,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     Text(
-                      "Autumn",
+                      AppString.autumn,
                       style: TextStyle(
                         fontFamily: "Instrument Serif",
                         fontSize: 40.sp,
@@ -325,7 +333,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      "COLLECTION",
+                      AppString.collection,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 12.sp,
@@ -349,7 +357,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 72.h),
             Center(
               child: Text(
-                "Just for You",
+                AppString.justForYou,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -366,52 +374,52 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -420,7 +428,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 40.h),
             Center(
               child: Text(
-                "@Trending",
+                AppString.trending,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -429,19 +437,19 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  "#2021",
+                  AppString.sal,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  "#spring",
+                  AppString.spring,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  "#collection",
+                  AppString.sCollection,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  "#fall",
+                  AppString.fall,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
               ],
@@ -451,15 +459,15 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  "#dress",
+                  AppString.sDress,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  "#autumncollection",
+                  AppString.autumnCollection,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  "#openfashion",
+                  AppString.openFashion,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
               ],
@@ -486,8 +494,7 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.only(left: 45.w, right: 48.w),
                     child: Center(
                       child: Text(
-                        "Making a luxurious lifestyle accessible "
-                        "for a generous group of women is our ",
+                       AppString.making,
                         maxLines: 3,
                         style: TextStyle(
                           fontFamily: "Open Sans",
@@ -499,7 +506,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Center(
                     child: Text(
-                      "daily drive.",
+                      AppString.dailyDrive,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 14.sp,
@@ -548,7 +555,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 35.h),
             Center(
               child: Text(
-                "Follow Us",
+                AppString.followUs,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 24.sp),
               ),
             ),
@@ -625,7 +632,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Text(
-                    "support@Sakil.design",
+                    AppString.supportSakil,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -634,7 +641,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "+8801774452302",
+                    AppString.phnNumbar,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -643,7 +650,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "08:00 - 22:00 - Everyday",
+                    AppString.time,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -666,7 +673,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "About",
+                   AppString.about,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -681,7 +688,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    "Contact",
+                    AppString.contact,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -697,7 +704,7 @@ class _HomePageState extends State<HomePage> {
                     Get.toNamed(AppRoute.blogGridView);
                   },
                   child: Text(
-                    "Blog",
+                    AppString.blog,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -714,7 +721,7 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(color: Color(0xffC4C4C4)),
               child: Center(
                 child: Text(
-                  "Copyright © 2025 Sakil. All Rights Reserved.",
+                  AppString.copyright,
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     fontSize: 14.sp,
@@ -728,6 +735,7 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
   /// ================== Change Content by Index ==================
   Widget _buildContent() {
     switch (selectedIndex) {
@@ -744,8 +752,8 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  Widget _allContent(){
-    return  SingleChildScrollView(
+  Widget _allContent() {
+    return SingleChildScrollView(
       child: Column(
         children: [
           Row(
@@ -754,32 +762,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -787,7 +795,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 30.h),
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Get.toNamed(AppRoute.allExploreMore);
             },
             child: Container(
@@ -796,7 +804,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "Explore More",
+                    AppString.exploreMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -813,8 +821,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-  Widget _apparelContent(){
-    return  SingleChildScrollView(
+
+  Widget _apparelContent() {
+    return SingleChildScrollView(
       child: Column(
         children: [
           Row(
@@ -823,32 +832,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle344_0,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle344_1,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle344_2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle344_3,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -856,7 +865,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 30.h),
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Get.toNamed(AppRoute.apparelExplore);
             },
             child: Container(
@@ -865,7 +874,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "Explore More",
+                    AppString.exploreMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -882,8 +891,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-  Widget _dressContent(){
-    return  SingleChildScrollView(
+
+  Widget _dressContent() {
+    return SingleChildScrollView(
       child: Column(
         children: [
           Row(
@@ -892,32 +902,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Dress5,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Dress8,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Dress4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Dress7,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -925,7 +935,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 30.h),
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Get.toNamed(AppRoute.dressExploreMore);
             },
             child: Container(
@@ -934,7 +944,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "Explore More",
+                    AppString.exploreMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -951,8 +961,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-  Widget _tshirtContent(){
-    return  SingleChildScrollView(
+
+  Widget _tshirtContent() {
+    return SingleChildScrollView(
       child: Column(
         children: [
           Row(
@@ -961,32 +972,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -994,7 +1005,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 30.h),
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Get.toNamed(AppRoute.tShirtExploreMore);
             },
             child: Container(
@@ -1003,7 +1014,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "Explore More",
+                    AppString.exploreMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -1020,8 +1031,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-  Widget _bagContent(){
-    return  SingleChildScrollView(
+
+  Widget _bagContent() {
+    return SingleChildScrollView(
       child: Column(
         children: [
           Row(
@@ -1030,32 +1042,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.rectangle5,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                   CustomProductCard(
-                    title: "21WN reversible angora cardigan",
+                    title: AppString.hTitle,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: "reversible angora cardigan",
+                    description: AppString.hDescription,
                   ),
                 ],
               ),
@@ -1063,7 +1075,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 30.h),
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Get.toNamed(AppRoute.bagExploreMore);
             },
             child: Container(
@@ -1072,7 +1084,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "Explore More",
+                    AppString.exploreMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -1093,5 +1105,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
 }
