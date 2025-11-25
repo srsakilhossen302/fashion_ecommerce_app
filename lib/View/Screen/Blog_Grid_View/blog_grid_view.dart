@@ -7,6 +7,7 @@ import 'package:get/get_core/src/get_main.dart';
 
 import '../../../Utils/AppIcons/app_icons.dart';
 import '../../../Utils/AppImg/app_img.dart';
+import '../../../Utils/StaticString/static_string.dart';
 import '../../Widgegt/Blog_grid_view_Custom_Card.dart';
 
 class BlogGridView extends StatefulWidget {
@@ -54,7 +55,7 @@ class _BlogGridViewState extends State<BlogGridView> {
             SizedBox(height: 32.h),
             Center(
               child: Text(
-                "Blog",
+                AppString.blog,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -77,7 +78,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "All",
+                      AppString.all,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -94,7 +95,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "Fashion",
+                      AppString.fashion,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -111,7 +112,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "Promo",
+                      AppString.promo,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -128,7 +129,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       //Get.toNamed(AppRoute.blogGridView);
                     },
                     child: Text(
-                      "Policy",
+                      AppString.policy,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -144,7 +145,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "Lookbook",
+                      AppString.lookbook,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -160,7 +161,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "Sale",
+                      AppString.sale,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -176,7 +177,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                       });
                     },
                     child: Text(
-                      "Sans",
+                      AppString.sans,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -190,65 +191,39 @@ class _BlogGridViewState extends State<BlogGridView> {
             SizedBox(height: 10.h),
             FashionCard(
               image: AppImages.rectangle1,
-              title: "2021 Style Guide: The Biggest Fall Trends",
+              title: AppString.blogTitle,
               description:
-              "You guys know how much I love mixing high and low-end – "
-                  "it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. "
-                  "The same goes for handbags! And honestly "
-                  "they are probably the best pieces to mix and "
-                  "match. I truly think the key to completing a look"
-                  " is with a great bag and I found so many this year that "
-                  "I wanted to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
+              AppString.blogDescription,
+              tag1: AppString.fashion,
+              tag2: AppString.postedTips,
+              date: AppString.blogDate,
             ),
             FashionCard(
               image: AppImages.rectangle2,
-              title: "2021 Style Guide: The Biggest Fall Trends",
+              title: AppString.blogTitle,
               description:
-              "You guys know how much I love mixing high and low-end "
-                  "– it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. The same"
-                  " goes for handbags! And honestly they are probably "
-                  "the best pieces to mix and match. I truly think the "
-                  "key to completing a look is with a great bag and I "
-                  "found so many this year that I wanted to share a round-"
-                  "up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
+              AppString.blogDescription,
+              tag1: AppString.fashion,
+              tag2: AppString.postedTips,
+              date: AppString.blogDate,
             ),
             FashionCard(
               image: AppImages.rectangle3,
-              title: "2021 Style Guide: The Biggest Fall Trends",
+              title: AppString.blogTitle,
               description:
-              "You guys know how much I love mixing high and low-end – "
-                  "it’s the best way to get the most bang for your buck "
-                  "while still elevating your wardrobe. The same goes for"
-                  " handbags! And honestly they are probably the best pieces "
-                  "to mix and match. I truly think the key to completing a look "
-                  "is with a great bag and I found so many this year that I wanted"
-                  " to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
+              AppString.blogDescription,
+              tag1: AppString.fashion,
+              tag2: AppString.postedTips,
+              date: AppString.blogDate,
             ),
             FashionCard(
               image: AppImages.rectangle4,
-              title: "2021 Style Guide: The Biggest Fall Trends",
+              title: AppString.blogTitle,
               description:
-              "You guys know how much I love mixing high and low-end "
-                  "– it’s the best way to get the most bang for your "
-                  "buck while still elevating your wardrobe. The same "
-                  "goes for handbags! And honestly they are probably the "
-                  "best pieces to mix and match. I truly think the key to"
-                  " completing a look is with a great bag and I found so many "
-                  "this year that I wanted to share a round-up of my most worn handbags.",
-              tag1: "Fashion",
-              tag2: "Tips",
-              date: "4 days ago",
+              AppString.blogDescription,
+              tag1: AppString.fashion,
+              tag2: AppString.postedTips,
+              date: AppString.blogDate,
             ),
             SizedBox(height: 28.h),
             Container(
@@ -262,7 +237,7 @@ class _BlogGridViewState extends State<BlogGridView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Load more",
+                  Text(AppString.loadMore,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -307,7 +282,7 @@ class _BlogGridViewState extends State<BlogGridView> {
               child: Column(
                 children: [
                   Text(
-                    "support@Sakil.design",
+                    AppString.supportSakil,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -316,7 +291,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "+8801774452302",
+                    AppString.phnNumbar,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -325,7 +300,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "08:00 - 22:00 - Everyday",
+                    AppString.time,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -348,7 +323,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                     });
                   },
                   child: Text(
-                    "About",
+                   AppString.about,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -363,7 +338,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                     });
                   },
                   child: Text(
-                    "Contact",
+                    AppString.contact,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -379,7 +354,7 @@ class _BlogGridViewState extends State<BlogGridView> {
                     //Get.toNamed(AppRoute.blogGridView);
                   },
                   child: Text(
-                    "Blog",
+                    AppString.blog,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -396,7 +371,7 @@ class _BlogGridViewState extends State<BlogGridView> {
               decoration: BoxDecoration(color: Color(0xffC4C4C4)),
               child: Center(
                 child: Text(
-                  "Copyright © 2025 Sakil. All Rights Reserved.",
+                  AppString.copyright,
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     fontSize: 14.sp,
