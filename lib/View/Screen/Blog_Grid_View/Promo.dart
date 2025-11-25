@@ -1,3 +1,4 @@
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:e_commerce_fashion_app/View/Widgegt/blog_grid_Fashion_Custom_Container.dart';
 import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _PromoState extends State<Promo> {
             SizedBox(height: 32.h),
             Center(
               child: Text(
-                "Blog",
+                AppString.blog,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -79,7 +80,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "All",
+                      AppString.all,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -98,7 +99,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "Fashion",
+                      AppString.fashion,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -116,7 +117,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "Promo",
+                      AppString.promo,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -135,7 +136,7 @@ class _PromoState extends State<Promo> {
                       //Get.toNamed(AppRoute.blogGridView);
                     },
                     child: Text(
-                      "Policy",
+                      AppString.policy,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -153,7 +154,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "Lookbook",
+                      AppString.lookbook,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -171,7 +172,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "Sale",
+                      AppString.sale,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -189,7 +190,7 @@ class _PromoState extends State<Promo> {
                       });
                     },
                     child: Text(
-                      "Sans",
+                      AppString.sans,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -204,118 +205,46 @@ class _PromoState extends State<Promo> {
             ),
             SizedBox(height: 28.h),
 
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle8,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "11/10/2025"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle7,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "11 days ago"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle6,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "12/11/25"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle10,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "4 days ago"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle9,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "6 days ago"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
 
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle4,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "1 days ago"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle1,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "15/10/2005"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
             SizedBox(height: 24.h),
-            BlogGridFashionCustomContainer(title: "2021 Style Guide:  "
-                "The Biggest Fall Trends",
+            BlogGridFashionCustomContainer(title: AppString.promoTitle,
                 image: AppImages.rectangle5,
-                description: "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
-                    "  You guys know how much I love mixing high and "
-                    "low-end – it’s the best way to get the most bang for"
-                    " your buck while still elevating your wardrobe."
-                    " The same goes for handbags! And honestly they "
-                    "are probably the best pieces to mix and match. "
-                    "I truly think the key to completing a look is with "
-                    "a great bag and I found so many this year that I wanted "
-                    "to share a round-up of my most worn handbags.",
-                date: "2 days ago"),
+                description: AppString.promoDescription,
+                date: AppString.promoDate),
 
             SizedBox(height: 28.h),
             Container(
@@ -329,7 +258,7 @@ class _PromoState extends State<Promo> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Load more",
+                  Text(AppString.load,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -374,7 +303,7 @@ class _PromoState extends State<Promo> {
               child: Column(
                 children: [
                   Text(
-                    "support@Sakil.design",
+                    AppString.supportSakil,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -383,7 +312,7 @@ class _PromoState extends State<Promo> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "+8801774452302",
+                    AppString.phnNumbar,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -392,7 +321,7 @@ class _PromoState extends State<Promo> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    "08:00 - 22:00 - Everyday",
+                    AppString.time,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -415,7 +344,7 @@ class _PromoState extends State<Promo> {
                     });
                   },
                   child: Text(
-                    "About",
+                    AppString.about,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -430,7 +359,7 @@ class _PromoState extends State<Promo> {
                     });
                   },
                   child: Text(
-                    "Contact",
+                    AppString.contact,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -446,7 +375,7 @@ class _PromoState extends State<Promo> {
                     //Get.toNamed(AppRoute.blogGridView);
                   },
                   child: Text(
-                    "Blog",
+                    AppString.blog,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -463,7 +392,7 @@ class _PromoState extends State<Promo> {
               decoration: BoxDecoration(color: Color(0xffC4C4C4)),
               child: Center(
                 child: Text(
-                  "Copyright © 2025 Sakil. All Rights Reserved.",
+                  AppString.copyright,
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     fontSize: 14.sp,

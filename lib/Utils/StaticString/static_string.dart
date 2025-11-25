@@ -77,4 +77,32 @@ class AppString{
 
 ///==============>>>>>>>>>> Dress Explore More <<<<<<<<<<<===============///
 
+  static const String  d650000All  =  "650000+ All";
+  static const String  allFashion  =  "All Fashion";
+  static const String  DressTitle  =  "21WN reversible angora cardigan";
+  static const String  DressDescription  =  "reversible angora cardigan";
+
+
+///==============>>>>>>>>>> Promo Page <<<<<<<<<<<===============///
+
+  static const String  promo  =  "Promo";
+  static const String  policy  =  "Policy";
+  static const String  lookbook  =  "Lookbook";
+  static const String  sale  =  "Sale";
+  static const String  sans  =  "Sans";
+  static const String  load  =  "Load more";
+  static const String  promoDate  =  "11/10/2025";
+  static const String  promoTitle  =  "2021 Style Guide: The Biggest Fall Trends";
+  static const String  promoDescription  =  "The excitement of fall fashion is here and I’m already loving some of the trend forecasts "
+      "  You guys know how much I love mixing high and "
+      "low-end – it’s the best way to get the most bang for"
+      " your buck while still elevating your wardrobe."
+      " The same goes for handbags! And honestly they "
+      "are probably the best pieces to mix and match. "
+      "I truly think the key to completing a look is with "
+      "a great bag and I found so many this year that I wanted "
+      "to share a round-up of my most worn handbags.";
+
+
+
 }

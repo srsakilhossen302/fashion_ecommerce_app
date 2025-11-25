@@ -1,3 +1,4 @@
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -58,7 +59,7 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                 Padding(
                   padding: EdgeInsets.only(left: 15.w, top: 30.h),
                   child: Text(
-                    "650000+ All",
+                    AppString.d650000All,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 20.sp,
@@ -74,7 +75,7 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "New",
+                          AppString.newI,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 14.sp,
@@ -132,7 +133,7 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "Women",
+                          AppString.women,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 16,
@@ -164,7 +165,7 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "All Fashion",
+                          AppString.allFashion,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 16,
@@ -189,64 +190,64 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                 Column(
                   children: [
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress1,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress2,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress3,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress4,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress5,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress6,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress7,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress1,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress5,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress4,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                   ],
                 ),
@@ -254,64 +255,64 @@ class _DressExploreMoreState extends State<DressExploreMore> {
                 Column(
                   children: [
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress4,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress5,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress6,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress7,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress8,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress1,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress2,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress3,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress4,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.DressTitle,
                       image: AppImages.Dress8,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.DressDescription,
                     ),
                   ],
                 ),
