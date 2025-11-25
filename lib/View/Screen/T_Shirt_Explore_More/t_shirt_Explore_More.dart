@@ -1,3 +1,4 @@
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -58,7 +59,7 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                 Padding(
                   padding: EdgeInsets.only(left: 15.w, top: 30.h),
                   child: Text(
-                    "6500+ T_Shirt ",
+                    AppString.moreTShirt,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 20.sp,
@@ -74,7 +75,7 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "New",
+                          AppString.newI,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 14.sp,
@@ -132,7 +133,7 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "Women",
+                          AppString.women,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 16,
@@ -164,7 +165,7 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                     child: Row(
                       children: [
                         Text(
-                          "All T_Shirt",
+                          AppString.allTShirt,
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 16,
@@ -189,19 +190,19 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                 Column(
                   children: [
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.tShirtTitle,
                       image: AppImages.Rectangle2,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.tShirtDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.tShirtTitle,
                       image: AppImages.Rectangle4,
                       price: 120.0,
-                      description: "reversible angora cardigan",
+                      description: AppString.tShirtDescription,
                     ),
                     CustomProductCard(
-                      title: "21WN reversible angora cardigan",
+                      title: AppString.tShirtTitle,
                       image: AppImages.Rectangle1,
                       price: 120.0,
                       description: "reversible angora cardigan",
@@ -468,11 +469,14 @@ class _TShirtExploreMoreState extends State<TShirtExploreMore> {
                     ),
                   ),
                   SizedBox(width: 9.w),
-                  IconButton(onPressed: (){},
-                      icon: SvgPicture.asset(
-                        AppIcons.next,
-                        width: 32,
-                        height: 32,))
+                  IconButton(
+                    onPressed: () {},
+                    icon: SvgPicture.asset(
+                      AppIcons.next,
+                      width: 32,
+                      height: 32,
+                    ),
+                  ),
                 ],
               ),
             ),

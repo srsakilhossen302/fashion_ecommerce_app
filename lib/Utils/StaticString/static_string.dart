@@ -19,6 +19,14 @@ class AppString{
   static const String createAccount  = "Create Account" ;
   static const String alreadyAccount  = "I Already Have an Account " ;
 
+///==============>>>>>>>>>> T-Shirt Explore More <<<<<<<<<<<===============///
+
+  static const String moreTShirt  = "6500+ T_Shirt" ;
+  static const String newI  = "New" ;
+  static const String women  = "Women" ;
+  static const String allTShirt  = "All T_Shirt" ;
+  static const String tShirtTitle  = "21WN reversible angora cardigan" ;
+  static const String tShirtDescription  = "reversible angora cardigan" ;
 
 
 }
