@@ -103,6 +103,21 @@ class AppString{
       "a great bag and I found so many this year that I wanted "
       "to share a round-up of my most worn handbags.";
 
+  static const String  cardText  =  "I found this Saint Laurent canvas "
+      "handbag this summer and immediately "
+      "fell in love. The neutral fabrics "
+      "are so beautiful and I like how this"
+      " handbag can also carry into fall. "
+      "The mini Fendi bucket bag with the "
+      "sheer fabric is so fun and such a statement"
+      " bag. Also this DeMellier off white bag is"
+      " so cute to carry to a dinner with you or "
+      "going out, it’s small but not too small to fit "
+      "your phone and keys still.";
 
+  static const String  posted  =  "Posted by OpenFashion |";
+  static const String  postedDate  =  "3 Days ago";
+  static const String  postedFashion  =  "#Fashion";
+  static const String  postedTips  =  "#Tips";
 
 }

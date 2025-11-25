@@ -1,4 +1,5 @@
 import 'package:e_commerce_fashion_app/Utils/AppImg/app_img.dart';
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -165,17 +166,7 @@ class _DetailPageState extends State<DetailPage> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
                 child: Text(
-                  "I found this Saint Laurent canvas "
-                  "handbag this summer and immediately "
-                  "fell in love. The neutral fabrics "
-                  "are so beautiful and I like how this"
-                  " handbag can also carry into fall. "
-                  "The mini Fendi bucket bag with the "
-                  "sheer fabric is so fun and such a statement"
-                  " bag. Also this DeMellier off white bag is"
-                  " so cute to carry to a dinner with you or "
-                  "going out, it’s small but not too small to fit "
-                  "your phone and keys still.",
+                  AppString.cardText,
                   style: TextStyle(
                     fontSize: 14.sp,
                     color: Color(0xff000000),
@@ -190,7 +181,7 @@ class _DetailPageState extends State<DetailPage> {
                 padding:  EdgeInsets.only(right: 16.w, left: 16.w,),
                 child: Row(
                   children: [
-                    Text("Posted by OpenFashion |",
+                    Text(AppString.posted,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Color(0xff000000),
@@ -200,7 +191,7 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                     SizedBox(width: 5.w,),
-                    Text("3 Days ago",
+                    Text(AppString.postedDate,
                       style: TextStyle(
                         fontSize: 14.sp,
                         color: Color(0xff000000),
@@ -228,7 +219,7 @@ class _DetailPageState extends State<DetailPage> {
                         border: Border.all(color: Color(0xff888888), width: 1),
                       ),
                       child: Text(
-                        "#Fashion",
+                        AppString.postedFashion,
                         style: TextStyle(
                           fontFamily: "Open Sans",
                           fontSize: 12.sp,
@@ -248,7 +239,7 @@ class _DetailPageState extends State<DetailPage> {
                         border: Border.all(color: Color(0xff888888), width: 1),
                       ),
                       child: Text(
-                        "#Tips",
+                        AppString.postedTips,
                         style: TextStyle(
                           fontFamily: "Open Sans",
                           fontSize: 12.sp,
@@ -291,7 +282,7 @@ class _DetailPageState extends State<DetailPage> {
                 child: Column(
                   children: [
                     Text(
-                      "support@Sakil.design",
+                      AppString.supportSakil,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -300,7 +291,7 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                     SizedBox(height: 5.h),
                     Text(
-                      "+8801774452302",
+                      AppString.phnNumbar,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -309,7 +300,7 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                     SizedBox(height: 5.h),
                     Text(
-                      "08:00 - 22:00 - Everyday",
+                      AppString.time,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -332,7 +323,7 @@ class _DetailPageState extends State<DetailPage> {
                       });
                     },
                     child: Text(
-                      "About",
+                      AppString.about,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -347,7 +338,7 @@ class _DetailPageState extends State<DetailPage> {
                       });
                     },
                     child: Text(
-                      "Contact",
+                      AppString.contact,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -363,7 +354,7 @@ class _DetailPageState extends State<DetailPage> {
                       //Get.toNamed(AppRoute.blogGridView);
                     },
                     child: Text(
-                      "Blog",
+                      AppString.blog,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -380,7 +371,7 @@ class _DetailPageState extends State<DetailPage> {
                 decoration: BoxDecoration(color: Color(0xffC4C4C4)),
                 child: Center(
                   child: Text(
-                    "Copyright © 2025 Sakil. All Rights Reserved.",
+                    AppString.copyright,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 14.sp,
