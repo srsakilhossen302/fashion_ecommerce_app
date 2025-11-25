@@ -66,4 +66,15 @@ class AppString{
   static const String  blog  =  "Blog";
   static const String  exploreMore  =  "Explore More";
   static const String  copyright  =  "Copyright © 2025 Sakil. All Rights Reserved.";
+
+///==============>>>>>>>>>> Home Product Details Page <<<<<<<<<<<===============///
+
+  static const String  checkout  =  "Checkout";
+  static const String  addPromoCode  =  "Add promo code";
+  static const String  delivery  =  "Delivery";
+  static const String  free  =  "Free";
+  static const String  estTotal  =  "Est. Total";
+
+///==============>>>>>>>>>> Dress Explore More <<<<<<<<<<<===============///
+
 }

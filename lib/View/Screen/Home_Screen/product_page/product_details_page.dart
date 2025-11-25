@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../Utils/AppIcons/app_icons.dart';
+import '../../../../Utils/StaticString/static_string.dart';
 
 class ProductDetailPage extends StatefulWidget {
   final String title;
@@ -59,7 +60,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             SizedBox(height: 40.h),
             Center(
               child: Text(
-                "Checkout",
+                AppString.checkout,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 24.h,
@@ -178,7 +179,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 children: [
                   SvgPicture.asset(AppIcons.VoucherIcon, width: 24.w, height: 24.h),
                   SizedBox(width: 10.w),
-                  Text("Add promo code",
+                  Text(AppString.addPromoCode,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -200,14 +201,14 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 children: [
                   SvgPicture.asset(AppIcons.DoortoDoorDeliveryIcon, width: 24.w, height: 24.h),
                   SizedBox(width: 10.w),
-                  Text("Delivery",
+                  Text(AppString.delivery,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
                       )
                   ),
                   SizedBox(width: 140.w),
-                  Text("Free",
+                  Text(AppString.free,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 16.sp,
@@ -228,7 +229,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Est. Total",
+                  Text(AppString.estTotal,
                     style: TextStyle(
                       fontFamily: "Playfair",
                       fontWeight: FontWeight.w500,
@@ -260,7 +261,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   SvgPicture.asset(AppIcons.shoppingbagIcon, width: 22.w, height: 22.h, color: Color(0xffFFFFFF),),
                   SizedBox(width: 14.w),
                   Text(
-                    "Checkout",
+                    AppString.checkout,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
