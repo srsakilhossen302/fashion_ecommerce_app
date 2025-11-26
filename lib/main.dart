@@ -1,3 +1,4 @@
+import 'package:e_commerce_fashion_app/Language/translator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -24,6 +25,10 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
+          locale: const Locale("en","US"),
+          translations: Language(),
+          defaultTransition: Transition.fadeIn,
+          transitionDuration: const Duration(milliseconds: 500),
           initialRoute: AppRoute.splashScreen,
           getPages: AppRoute.routes,
           builder: (context, widget) {
