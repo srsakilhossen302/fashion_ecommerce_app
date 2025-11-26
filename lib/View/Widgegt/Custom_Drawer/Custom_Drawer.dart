@@ -1,3 +1,5 @@
+import 'package:e_commerce_fashion_app/Utils/StaticString/static_string.dart';
+import 'package:e_commerce_fashion_app/core/App_Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -5,6 +7,7 @@ import 'package:get/get.dart';
 
 import '../../../Utils/AppIcons/app_icons.dart';
 import '../../../Utils/AppImg/app_img.dart';
+import '../LanguagePage.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});
@@ -58,7 +61,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                         });
                       },
                       child: Text(
-                        "Women",
+                        AppString.women.tr,
                         style: TextStyle(
                           fontFamily: "Open Sans",
                           fontSize: 16.sp,
@@ -132,6 +135,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 ),
               ],
             ),
+
             /// ================== Show Content Based on Tab ==================
             _buildContent(),
           ],
@@ -179,7 +183,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 padding: EdgeInsets.only(left: 16.w, right: 40.w),
                 child: ListTile(
                   title: Text(
-                    "New",
+                    AppString.newI.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -397,7 +401,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSection = expandedSection == "Bags" ? "" : "Bags";
+                        expandedSection = expandedSection == "Bags"
+                            ? ""
+                            : "Bags";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -472,7 +478,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSection = expandedSection == "Shoes" ? "" : "Shoes";
+                        expandedSection = expandedSection == "Shoes"
+                            ? ""
+                            : "Shoes";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -664,7 +672,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSection = expandedSection == "Accessories" ? "" : "Accessories";
+                        expandedSection = expandedSection == "Accessories"
+                            ? ""
+                            : "Accessories";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -724,11 +734,12 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   ),
                 ),
 
-              SizedBox(height: 30.h,),
+              SizedBox(height: 30.h),
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("+8801774452302",
+                  title: Text(
+                    "+8801774452302",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -741,9 +752,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
               ),
 
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("Store locator",
+                  title: Text(
+                    "Store locator",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -754,22 +766,51 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   leading: SvgPicture.asset(AppIcons.LocationIcon),
                 ),
               ),
-              SizedBox(height: 30.h,),
-              Center(
-                child: Image.asset(AppImages.Devider),
+
+              Padding(
+                padding: EdgeInsets.only(left: 16.h),
+                child: ListTile(
+                  title: Text(
+                    "language".tr,
+                    style: TextStyle(
+                      fontFamily: "Open Sans",
+                      fontSize: 16.sp,
+                      letterSpacing: 2,
+                      color: const Color(0xff000000),
+                    ),
+                  ),
+                  leading: Icon(Icons.language),
+                  onTap: () {
+                    Get.toNamed(AppRoute.languagePage);
+                  },
+                ),
               ),
-              SizedBox(height: 30.h,),
+
+              SizedBox(height: 30.h),
+              Center(child: Image.asset(AppImages.Devider)),
+              SizedBox(height: 30.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(AppIcons.TwitterLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.InstagramLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.YouTubeLogo, height: 24.h, width: 24.w,)
+                  SvgPicture.asset(
+                    AppIcons.TwitterLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.InstagramLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.YouTubeLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
                 ],
-              )
-
+              ),
             ],
           ),
         ),
@@ -798,7 +839,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionm = expandedSectionm == "New" ? "" : "New";
+                        expandedSectionm = expandedSectionm == "New"
+                            ? ""
+                            : "New";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1006,7 +1049,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionm = expandedSectionm == "Bags" ? "" : "Bags";
+                        expandedSectionm = expandedSectionm == "Bags"
+                            ? ""
+                            : "Bags";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1081,7 +1126,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionm = expandedSectionm == "Shoes" ? "" : "Shoes";
+                        expandedSectionm = expandedSectionm == "Shoes"
+                            ? ""
+                            : "Shoes";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1273,7 +1320,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionm = expandedSectionm == "Accessories" ? "" : "Accessories";
+                        expandedSectionm = expandedSectionm == "Accessories"
+                            ? ""
+                            : "Accessories";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1333,11 +1382,12 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   ),
                 ),
 
-              SizedBox(height: 30.h,),
+              SizedBox(height: 30.h),
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("+8801774452302",
+                  title: Text(
+                    "+8801774452302",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -1350,9 +1400,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
               ),
 
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("Store locator",
+                  title: Text(
+                    "Store locator",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -1363,22 +1414,31 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   leading: SvgPicture.asset(AppIcons.LocationIcon),
                 ),
               ),
-              SizedBox(height: 30.h,),
-              Center(
-                child: Image.asset(AppImages.Devider),
-              ),
-              SizedBox(height: 30.h,),
+              SizedBox(height: 30.h),
+              Center(child: Image.asset(AppImages.Devider)),
+              SizedBox(height: 30.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(AppIcons.TwitterLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.InstagramLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.YouTubeLogo, height: 24.h, width: 24.w,)
+                  SvgPicture.asset(
+                    AppIcons.TwitterLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.InstagramLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.YouTubeLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
                 ],
-              )
-
+              ),
             ],
           ),
         ),
@@ -1407,7 +1467,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionk = expandedSectionk == "New" ? "" : "New";
+                        expandedSectionk = expandedSectionk == "New"
+                            ? ""
+                            : "New";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1615,7 +1677,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionk = expandedSectionk == "Bags" ? "" : "Bags";
+                        expandedSectionk = expandedSectionk == "Bags"
+                            ? ""
+                            : "Bags";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1690,7 +1754,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionk = expandedSectionk == "Shoes" ? "" : "Shoes";
+                        expandedSectionk = expandedSectionk == "Shoes"
+                            ? ""
+                            : "Shoes";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1882,7 +1948,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   trailing: IconButton(
                     onPressed: () {
                       setState(() {
-                        expandedSectionk = expandedSectionk == "Accessories" ? "" : "Accessories";
+                        expandedSectionk = expandedSectionk == "Accessories"
+                            ? ""
+                            : "Accessories";
                       });
                     },
                     icon: SvgPicture.asset(
@@ -1942,11 +2010,12 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   ),
                 ),
 
-              SizedBox(height: 30.h,),
+              SizedBox(height: 30.h),
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("+8801774452302",
+                  title: Text(
+                    "+8801774452302",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -1959,9 +2028,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
               ),
 
               Padding(
-                padding:  EdgeInsets.only(left: 16.h),
+                padding: EdgeInsets.only(left: 16.h),
                 child: ListTile(
-                  title: Text("Store locator",
+                  title: Text(
+                    "Store locator",
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -1972,21 +2042,31 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   leading: SvgPicture.asset(AppIcons.LocationIcon),
                 ),
               ),
-              SizedBox(height: 30.h,),
-              Center(
-                child: Image.asset(AppImages.Devider),
-              ),
-              SizedBox(height: 30.h,),
+              SizedBox(height: 30.h),
+              Center(child: Image.asset(AppImages.Devider)),
+              SizedBox(height: 30.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(AppIcons.TwitterLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.InstagramLogo, height: 24.h, width: 24.w,),
-                  SizedBox(width:  30.w),
-                  SvgPicture.asset(AppIcons.YouTubeLogo, height: 24.h, width: 24.w,)
+                  SvgPicture.asset(
+                    AppIcons.TwitterLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.InstagramLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
+                  SizedBox(width: 30.w),
+                  SvgPicture.asset(
+                    AppIcons.YouTubeLogo,
+                    height: 24.h,
+                    width: 24.w,
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),

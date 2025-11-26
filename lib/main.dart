@@ -2,6 +2,7 @@ import 'package:e_commerce_fashion_app/Language/translator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'controllers/language_controller.dart';
 import 'core/App_Routes/app_routes.dart';
 import 'core/dependency_injection/dependency_injection.dart';
 
@@ -9,6 +10,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   DependencyInjection.init();   // <<< VERY IMPORTANT
+
+  // LanguageController singleton (app-wide)
+  Get.put(LanguageController(), permanent: true);
 
   runApp(MyApp());
 }
@@ -26,6 +30,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           locale: const Locale("en","US"),
+          fallbackLocale: Locale('en','US'),
           translations: Language(),
           defaultTransition: Transition.fadeIn,
           transitionDuration: const Duration(milliseconds: 500),

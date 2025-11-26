@@ -15,6 +15,7 @@ import '../../View/Screen/splashScreen/splash_screen_view.dart';
 import '../../View/Widgegt/Custom_Drawer/Custom_Drawer.dart';
 import '../../View/Widgegt/Custom_Drawer/Custom_Drawer_Menu.dart';
 import '../../View/Widgegt/Custom_Drawer/Kids.dart';
+import '../../View/Widgegt/LanguagePage.dart';
 
 
 
@@ -38,6 +39,7 @@ class AppRoute {
   static const String splashScreen = "/splashScreen";
   static const String signInScreen = "/signInScreen";
   static const String signUpScreen = "/signUpScreen";
+  static const String languagePage = "/languagePage";
 
   static List<GetPage> routes = [
     ///==================== Authentication  Routes ====================///
@@ -58,6 +60,7 @@ class AppRoute {
     GetPage(name: splashScreen, page: () =>  SplashScreenView()),
     GetPage(name: signInScreen, page: () =>  SignInView()),
     GetPage(name: signUpScreen, page: () =>  SignUpView()),
+    GetPage(name: languagePage, page: () =>  LanguagePage()),
    // GetPage(name: productDetailPage, page: () => const ProductDetailPage(title: "", image: "",)),
 
 

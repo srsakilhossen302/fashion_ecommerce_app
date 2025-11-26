@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      AppString.luxury,
+                      AppString.luxury.tr,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.sp,
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      AppString.fashion,
+                      AppString.fashion.tr,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.h,
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      AppString.accessories,
+                      AppString.accessories.tr,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 24.h,
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         child: Center(
                           child: Text(
-                            AppString.exploreCollection,
+                            AppString.exploreCollection.tr,
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 17,
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 24.h),
             Center(
               child: Text(
-                AppString.newArrival,
+                AppString.newArrival.tr,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 24.sp,
@@ -155,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    AppString.all,
+                    AppString.all.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    AppString.apparel,
+                    AppString.apparel.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
@@ -209,7 +209,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    AppString.tShirt,
+                    AppString.tShirt.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    AppString.bag,
+                    AppString.bag.tr,
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14.sp,
@@ -290,7 +290,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 60.h),
             Center(
               child: Text(
-                AppString.collections,
+                AppString.collections.tr,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 20.sp,
@@ -325,7 +325,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     Text(
-                      AppString.autumn,
+                      AppString.autumn.tr,
                       style: TextStyle(
                         fontFamily: "Instrument Serif",
                         fontSize: 40.sp,
@@ -333,7 +333,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      AppString.collection,
+                      AppString.collection.tr,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 12.sp,
@@ -357,7 +357,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 72.h),
             Center(
               child: Text(
-                AppString.justForYou,
+                AppString.justForYou.tr,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -374,52 +374,52 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
@@ -428,7 +428,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 40.h),
             Center(
               child: Text(
-                AppString.trending,
+                AppString.trending.tr,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 20.sp),
               ),
             ),
@@ -437,19 +437,19 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  AppString.sal,
+                  AppString.sal.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  AppString.spring,
+                  AppString.spring.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  AppString.sCollection,
+                  AppString.sCollection.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  AppString.fall,
+                  AppString.fall.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
               ],
@@ -459,15 +459,15 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  AppString.sDress,
+                  AppString.sDress.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  AppString.autumnCollection,
+                  AppString.autumnCollection.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
                 Text(
-                  AppString.openFashion,
+                  AppString.openFashion.tr,
                   style: TextStyle(fontFamily: "Open Sans", fontSize: 12.sp),
                 ),
               ],
@@ -494,7 +494,7 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.only(left: 45.w, right: 48.w),
                     child: Center(
                       child: Text(
-                       AppString.making,
+                       AppString.making.tr,
                         maxLines: 3,
                         style: TextStyle(
                           fontFamily: "Open Sans",
@@ -506,7 +506,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Center(
                     child: Text(
-                      AppString.dailyDrive,
+                      AppString.dailyDrive.tr,
                       style: TextStyle(
                         fontFamily: "Open Sans",
                         fontSize: 14.sp,
@@ -555,7 +555,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 35.h),
             Center(
               child: Text(
-                AppString.followUs,
+                AppString.followUs.tr,
                 style: TextStyle(fontFamily: "Playfair", fontSize: 24.sp),
               ),
             ),
@@ -632,7 +632,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Text(
-                    AppString.supportSakil,
+                    AppString.supportSakil.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -641,7 +641,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    AppString.phnNumbar,
+                    AppString.phnNumbar.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -650,7 +650,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(height: 5.h),
                   Text(
-                    AppString.time,
+                    AppString.time.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -673,7 +673,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                   AppString.about,
+                   AppString.about.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -688,7 +688,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                   child: Text(
-                    AppString.contact,
+                    AppString.contact.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -704,7 +704,7 @@ class _HomePageState extends State<HomePage> {
                     Get.toNamed(AppRoute.blogGridView);
                   },
                   child: Text(
-                    AppString.blog,
+                    AppString.blog.tr,
                     style: TextStyle(
                       fontFamily: "Open Sans",
                       fontSize: 16.sp,
@@ -721,7 +721,7 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(color: Color(0xffC4C4C4)),
               child: Center(
                 child: Text(
-                  AppString.copyright,
+                  AppString.copyright.tr,
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     fontSize: 14.sp,
@@ -762,32 +762,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
@@ -804,7 +804,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    AppString.exploreMore,
+                    AppString.exploreMore.tr,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -832,32 +832,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle344_0,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle344_1,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle344_2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle344_3,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
@@ -874,7 +874,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    AppString.exploreMore,
+                    AppString.exploreMore.tr,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -902,32 +902,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Dress5,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Dress8,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Dress4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Dress7,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
@@ -944,7 +944,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    AppString.exploreMore,
+                    AppString.exploreMore.tr,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -972,32 +972,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle1,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle3,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
@@ -1042,32 +1042,32 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle2,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
               Column(
                 children: [
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.rectangle5,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                   CustomProductCard(
-                    title: AppString.hTitle,
+                    title: AppString.hTitle.tr,
                     image: AppImages.Rectangle4,
                     price: 120.0,
-                    description: AppString.hDescription,
+                    description: AppString.hDescription.tr,
                   ),
                 ],
               ),
